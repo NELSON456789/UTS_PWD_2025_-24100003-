@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowUp - Temukan Make Up Artist Impianmu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+:root {
+     --utama: #ff69b4;
+     --muda: #f8c8dc;
+     --tua: #d04894;
+     --gradient-bg: linear-gradient(to right, #ff69b4, #d04894);
+     --text: #333;
+   }
+
+  body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: #f4f6fa;
+     color: var(--text);
+   }
+
+   header {
+     background: var(--gradient-bg);
+     color: white;
+     padding: 60px 20px;
+     text-align: center;
+   }
+
+   header h1 {
+     font-size: 2.8rem;
+     margin-bottom: 10px;
+   }
+
+   .btn {
+     display: inline-block;
+     margin-top: 20px;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     padding-left: 30px;
+     padding-right: 30px;
+     background-color: white;
+     color: var(--tua);
+     border-radius: 25px;
+   }
+
+   .btn:hover {
+    color: var(--muda);
+    animation: bounce 2s;
+   }
+
+   .feature-box {
+            display: inline-block;
+            icon: var(--tua);
+            background: var(--muda);
+            margin: 150px 50px 50px;
+            padding: 30px;
+            border-radius: 10px;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+        }
+
+   .search-box {
+            display: inline-block;
+            margin: 50px 50px 50px;
+            padding: 30px;
+            border-radius: 10px;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+        }
+
+   @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>GlowUp</h1>
+    <p>Lebih dari 1000+ Make Up Artist siap mengubah penampilanmu!
+        <br>Tampil memukau untuk setiap momen spesial!</p>
+    <a href="style.css" class="btn">Cari MUA Sekarang</a>
+  </header>
+  
+  <section class="search-section">
+    <h2>Cari MUA di Sekitarmu</h2>
+    <div class="search-box">
+    <form class="search-form">
+      <input type="text" placeholder="Masukkan lokasi (contoh: Jakarta)" />
+      <select id="category">
+        <option selected disabled>Pilih Kategori</option>
+        <option>Wedding</option>
+        <option>Photoshoot</option>
+        <option>Graduation</option>
+        <option>Daily Look</option>
+      </select>
+      <button type="submit">Cari Sekarang</button>
+    </form>
+    </div>
+  </section>
+  
+  <section class="features">
+    <div class="feature-box">
+      <i class="fas fa-magic"></i>
+      <h3>Ribuan MUA Profesional</h3>
+      <p>Pilih dari banyak Make Up Artist bersertifikat dan terpercaya.</p>
+    </div>
+    
+    <div class="feature-box">
+      <i class="fas fa-calendar-check"></i>
+      <h3>Booking Mudah</h3>
+      <p>Jadwalkan sesi make up Anda langsung dari platform kami.</p>
+    </div>
+    
+    <div class="feature-box">
+      <i class="fas fa-star"></i>
+      <h3>Ulasan Asli</h3>
+      <p>Lihat penilaian dan review nyata dari pelanggan sebelumnya.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Jadilah Pusat Perhatian dengan Sentuhan Profesional</h2>
+    <p>Gabung bersama ratusan klien puas yang telah menemukan MUA favorit mereka melalui GlowUp.</p>
+    <a href="style.css" class="btn">Mulai Sekarang</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GlowUp</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+:root {
+     --utama: #ff69b4;
+     --muda: #f8c8dc;
+     --tua: #d04894;
+     --gradient-bg: linear-gradient(to right, #ff69b4, #d04894);
+     --text: #333;
+   }
+
+  body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: #f4f6fa;
+     color: var(--text);
+   }
+
+   header {
+     background: var(--gradient-bg);
+     color: white;
+     padding: 60px 20px;
+     text-align: center;
+   }
+
+   header h1 {
+     font-size: 2.8rem;
+     margin-bottom: 10px;
+   }
+
+   .btn {
+     display: inline-block;
+     margin-top: 20px;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     padding-left: 30px;
+     padding-right: 30px;
+     background-color: white;
+     color: var(--tua);
+     border-radius: 25px;
+   }
+
+   .btn:hover {
+    color: var(--muda);
+    animation: bounce 2s;
+   }
+
+   .feature-box {
+            display: inline-block;
+            icon: var(--tua);
+            background: var(--muda);
+            margin: 150px 50px 50px;
+            padding: 30px;
+            border-radius: 10px;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+        }
+
+   .search-box {
+            display: inline-block;
+            margin: 50px 50px 50px;
+            padding: 30px;
+            border-radius: 10px;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+        }
+
+   @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
